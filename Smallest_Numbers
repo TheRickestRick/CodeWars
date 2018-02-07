@@ -1,0 +1,10 @@
+function removeSmallest(numbers) {
+  var smallestIndex = 0;
+  for (var i = 1; i < numbers.length; i++){
+    if (numbers[i] < numbers[smallestIndex]){
+      smallestIndex = i;
+    }
+  }
+  numbers.splice(smallestIndex, 1);
+  return numbers;
+}
